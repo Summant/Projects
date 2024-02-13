@@ -15,8 +15,7 @@ def main():
                           "Stance": '',
                           "W": '',
                           "L": '',
-                          "D": '',
-                          "Belt": ''}
+                          "D": ''}
 
     # setup link + html
     url = f'http://ufcstats.com/statistics/fighters?char={search_char}&page=all'
@@ -47,7 +46,6 @@ def main():
         fighter_attributes["W"] = lst_of_attr[index+5]
         fighter_attributes["L"] = lst_of_attr[index+6]
         fighter_attributes["D"] = lst_of_attr[index+7]
-        fighter_attributes["Belt"] = lst_of_attr[index+8]
         for elem in list(fighter_attributes):
             print(f"{elem}: {fighter_attributes[elem]}")
     else:
